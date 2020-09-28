@@ -1,0 +1,96 @@
+:root {
+  /* CSS HEX */
+  --persian-green: #1b998bff;
+  --flickr-pink: #ed217cff;
+  --space-cadet: #2d3047ff;
+  --canary: #fffd82ff;
+  --light-salmon: #ff9b71ff;
+  --white: #fffafc;
+
+  /* CSS HSL */
+  --persian-green: hsla(173, 70%, 35%, 1);
+  --flickr-pink: hsla(333, 85%, 53%, 1);
+  --space-cadet: hsla(233, 22%, 23%, 1);
+  --canary: hsla(59, 100%, 75%, 1);
+  --light-salmon: hsla(18, 100%, 72%, 1);
+  --white: #fffafc;
+}
+
+/* borders */
+.border-green {
+  border: 2px solid var(--persian-green);
+}
+
+.border-pink {
+  border: 2px solid var(--flickr-pink);
+}
+
+.border-dark {
+  border: 2px solid var(--space-cadet);
+}
+
+.border-yellow {
+  border: 2px solid var(--canary);
+}
+
+.border-orange {
+  border: 2px solid var(--light-salmon);
+}
+
+.background-green {
+  background-color: var(--persian-green);
+}
+
+.background-pink {
+  background-color: var(--flickr-pink);
+}
+
+.background-dark {
+  background-color: var(--space-cadet);
+}
+
+.background-yellow {
+  background-color: var(--canary);
+}
+
+.background-orange {
+  background-color: var(--light-salmon);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-green {
+  color: var(--persian-green);
+}
+
+.text-pink {
+  color: var(--flickr-pink);
+}
+
+.text-dark {
+  color: var(--space-cadet);
+}
+
+.text-yellow {
+  color: var(--canary);
+}
+
+.text-orange {
+  color: var(--light-salmon);
+}
+
+/* global style */
+body {
+  /*fonts*/
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  /* size */
+  height: 100%;
+  margin: 0;
+}
+
+.boxGlobal {
+  height: 100vh;
+}

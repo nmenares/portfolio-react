@@ -1,0 +1,18 @@
+.boxNavbar {
+  height: 8%;
+}
+
+.navbar {
+  height: 100%;
+  font-size: 24px;
+}
+
+.linkIcons > * {
+  margin-right: 10px;
+  color: var(--white);
+}
+
+.linkIcons > *:hover {
+  color: var(--persian-green);
+  cursor: pointer;
+}
