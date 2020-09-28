@@ -5,3 +5,12 @@
 .intro {
   height: 100%;
 }
+
+.carousel {
+  width: 500px !important;
+}
+
+.carousel .slide,
+.carousel .slide .legend {
+  background: var(--space-cadet) !important;
+}
