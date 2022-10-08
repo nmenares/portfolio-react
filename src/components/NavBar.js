@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "../styles/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Popup } from "semantic-ui-react";
@@ -47,8 +48,8 @@ class NavBar extends React.Component {
         </div>
         <div className="row menu background-light text-dark">
           <div className="two wide column"/>
-          <div className="twelve wide column center aligned">Software Engineer</div>
-          <div className="two wide column center aligned">More...</div>
+          <div className="twelve wide column center aligned"><Link to="/career">Software Engineer</Link></div>
+          <div className="two wide column center aligned"><Link to="/more">More...</Link></div>
         </div>
       </div>
     );
