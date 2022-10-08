@@ -1,8 +1,6 @@
 import React from "react";
-import Intro from "./Intro";
 import NavBar from "./NavBar";
-import TimeLine from "./TimeLine";
-import FootInfo from "./FootInfo";
+import FooterInfo from "./FooterInfo";
 import "../styles/basics.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -16,9 +14,7 @@ class App extends React.Component {
     return (
       <div className="boxGlobal">
         <NavBar></NavBar>
-        <Intro></Intro>
-        <TimeLine></TimeLine>
-        <FootInfo></FootInfo>
+        <FooterInfo></FooterInfo>
       </div>
     );
   }

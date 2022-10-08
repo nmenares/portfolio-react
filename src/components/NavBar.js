@@ -45,6 +45,11 @@ class NavBar extends React.Component {
           </div>
           <div className="one wide column"></div>
         </div>
+        <div className="row menu background-light text-dark">
+          <div className="two wide column"/>
+          <div className="twelve wide column center aligned">Software Engineer</div>
+          <div className="two wide column center aligned">More...</div>
+        </div>
       </div>
     );
   }
