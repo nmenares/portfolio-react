@@ -19,7 +19,7 @@
 
 .linkIcons > * {
   margin-right: 10px;
-  color: var(--white);
+  color: var(--space-cadet);
 }
 
 .linkIcons > *:hover {

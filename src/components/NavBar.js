@@ -8,17 +8,9 @@ class NavBar extends React.Component {
   render() {
     return (
       <div className="ui grid middle aligned boxNavbar">
-        <div className="row navbar background-dark text-white">
+        <div className="row navbar">
           <div className="one wide column"></div>
-          <div className="one wide column right aligned">
-            <img
-              src="/logo-transparent.png"
-              alt="NM"
-              height="30px"
-              width="30px"
-            />
-          </div>
-          <div className="six wide column">Nataly Menares</div>
+          <div className="seven wide column">Nataly Menares</div>
           <div className="seven wide column right aligned linkIcons">
             <a
               href="https://github.com/nmenares"
