@@ -7,11 +7,19 @@ import { Popup } from "semantic-ui-react";
 class NavBar extends React.Component {
   render() {
     return (
-      <div className="ui grid middle aligned boxNavbar">
-        <div className="row navbar">
-          <div className="one wide column"></div>
-          <div className="seven wide column">Nataly Menares</div>
-          <div className="seven wide column right aligned linkIcons">
+      <div className="ui grid top aligned boxNavbar">
+        <div className="row header">
+          <div className="eight wide column tittleWrapper">
+            <div className="ui grid">
+              <div className="row navbarTitle">
+                Nataly Menares
+              </div>
+              <div className="row navbarSubtitle">
+                Software Engineer
+              </div>
+            </div>
+          </div>
+          <div className="eight wide column right aligned linkIcons">
             <a
               href="https://github.com/nmenares"
               target="_blank"
@@ -36,12 +44,21 @@ class NavBar extends React.Component {
               />
             </a>
           </div>
-          <div className="one wide column"></div>
         </div>
-        <div className="row menu background-light text-dark">
-          <div className="two wide column"/>
-          <div className="twelve wide column center aligned"><Link to="/career">Software Engineer</Link></div>
-          <div className="two wide column center aligned"><Link to="/more">More...</Link></div>
+        <div className="row menu text-dark-purple middle aligned">
+          <div className="eight wide column">
+            <div className="ui grid">
+              <div className="row"><Link to="/career">Background</Link></div>
+              <div className="row"><Link to="/career">Projects</Link></div>
+              <div className="row"><Link to="/career">Gallery</Link></div>
+              <div className="row"><Link to="/career">Contact</Link></div>
+            </div>
+          </div>
+          <div className="three wide column"></div>
+          <div className="four wide column introText">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.
+          </div>
+          <div className="one wide column"></div>
         </div>
       </div>
     );

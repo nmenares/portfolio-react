@@ -1,0 +1,7 @@
+.canvasBackground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+  filter: blur(100px) contrast(2);
+}

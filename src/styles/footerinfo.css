@@ -1,6 +1,7 @@
 .boxFooter {
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
+  right: 32px;
   width: 100%;
 }
 

@@ -4,10 +4,11 @@ import {
   Routes,
   Route,
   Navigate,
-} from 'react-router-dom';
+} from "react-router-dom";
+import Canvas from "./Canvas";
 import NavBar from "./NavBar";
-import Career from './Career';
-import More from './More';
+import Career from "./Career";
+import More from "./More";
 import FooterInfo from "./FooterInfo";
 import "../styles/basics.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -21,14 +22,16 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div className="boxGlobal">
-          <NavBar></NavBar>
-          <Routes>
-            <Route exact path='/' element={<Navigate to="/career" />}/>
-            <Route exact path='/career' element={< Career />}/>
-            <Route exact path='/more' element={< More />}/>
-          </Routes>
-          <FooterInfo></FooterInfo>
+        <div className="globalBox background-light-grey">
+          <div className="innerGlobalBox border-dark-purple">
+            <Canvas />
+            <Routes>
+              <Route exact path="/" element={<NavBar />} />
+              <Route exact path="/career" element={<Career />} />
+              <Route exact path="/more" element={<More />} />
+            </Routes>
+          </div>
+          <FooterInfo />
         </div>
       </Router>
     );

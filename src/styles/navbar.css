@@ -1,32 +1,42 @@
-.ui.grid>.row.navbar {
-  padding-bottom: 0px;
-}
-
 .ui.grid.boxNavbar {
-  margin-bottom: 0px;
+  margin: 16px;
+  height: calc(100% - 32px);
 }
 
-  
-.boxNavbar {
-  height: 150px;
-  position: sticky;
+.ui.grid>.row.header {
+  height: fit-content;
 }
 
-.navbar {
-  height: 100px;
-  font-size: 35px;
+.ui.grid>.row>.column.tittleWrapper {
+  padding-left: 36px;
+}
+
+.navbarTitle {
+  font-size: 24px;
+}
+
+.ui.grid>.row.navbarSubtitle {
+  margin-top: -8px;
+  padding: 0px;
+  font-size: 16px;
 }
 
 .linkIcons > * {
+  font-size: 24px;
   margin-right: 10px;
   color: var(--space-cadet);
 }
 
 .linkIcons > *:hover {
-  color: var(--persian-green);
+  color: var(--light-grey);
   cursor: pointer;
 }
 
 .menu {
-  font-size: 30px;
+  font-size: 20px;
+  padding-top: 0px;
+}
+
+.introText {
+  font-size: 16px;
 }
