@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "../styles/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Popup } from "semantic-ui-react";
+import { texts } from "../utils/Texts.js";
 
 class NavBar extends React.Component {
   render() {
@@ -45,7 +46,7 @@ class NavBar extends React.Component {
             </a>
           </div>
         </div>
-        <div className="row menu text-dark-purple middle aligned">
+        <div className="row menu text-dark-purple top aligned">
           <div className="eight wide column">
             <div className="ui grid">
               <div className="row"><Link to="/career">Background</Link></div>
@@ -56,7 +57,7 @@ class NavBar extends React.Component {
           </div>
           <div className="three wide column"></div>
           <div className="four wide column introText">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.
+            { texts.intro }
           </div>
           <div className="one wide column"></div>
         </div>

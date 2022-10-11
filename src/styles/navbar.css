@@ -1,6 +1,7 @@
 .ui.grid.boxNavbar {
   margin: 16px;
   height: calc(100% - 32px);
+  align-items: baseline;
 }
 
 .ui.grid>.row.header {
@@ -38,5 +39,6 @@
 }
 
 .introText {
+  white-space: pre-line;
   font-size: 16px;
 }
