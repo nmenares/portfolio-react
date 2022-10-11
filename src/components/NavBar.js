@@ -46,7 +46,7 @@ class NavBar extends React.Component {
             </a>
           </div>
         </div>
-        <div className="row main text-dark-purple top aligned">
+        <div className="row main text-dark-purple">
           <div className="eight wide column menu">
             <div className="ui grid">
               <div className="row option"><Link to="/career">Background</Link></div>
