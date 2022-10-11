@@ -46,13 +46,13 @@ class NavBar extends React.Component {
             </a>
           </div>
         </div>
-        <div className="row menu text-dark-purple top aligned">
-          <div className="eight wide column">
+        <div className="row main text-dark-purple top aligned">
+          <div className="eight wide column menu">
             <div className="ui grid">
-              <div className="row"><Link to="/career">Background</Link></div>
-              <div className="row"><Link to="/career">Projects</Link></div>
-              <div className="row"><Link to="/career">Gallery</Link></div>
-              <div className="row"><Link to="/career">Contact</Link></div>
+              <div className="row option"><Link to="/career">Background</Link></div>
+              <div className="row option"><Link to="/career">Projects</Link></div>
+              <div className="row option"><Link to="/career">Gallery</Link></div>
+              <div className="row option"><Link to="/career">Contact</Link></div>
             </div>
           </div>
           <div className="three wide column"></div>
