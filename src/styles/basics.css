@@ -9,7 +9,7 @@
   --dark-purple: rgb(71, 39, 49);
   --space-cadet: rgb(40, 33, 48);
   --canary: rgb(36, 120, 143);
-  --dark-yellow: rgb(132, 141, 171);
+  --grey: rgb(132, 141, 171);
   --white: #fffafc;
 }
 
@@ -34,8 +34,8 @@
   border: 1px solid var(--canary);
 }
 
-.border-dark-yellow {
-  border: 1px solid var(--dark-yellow);
+.border-grey {
+  border: 1px solid var(--grey);
 }
 
 .background-light {
@@ -58,8 +58,8 @@
   background-color: var(--canary);
 }
 
-.background-dark-yellow {
-  background-color: var(--dark-yellow);
+.background-grey {
+  background-color: var(--grey);
 }
 
 .text-white {
@@ -86,8 +86,8 @@
   color: var(--canary);
 }
 
-.text-dark-yellow {
-  color: var(--dark-yellow);
+.text-grey {
+  color: var(--grey);
 }
 
 /* global style */
@@ -107,8 +107,8 @@ body {
 .innerGlobalBox {
   position: absolute;
   margin: 28px;
-  height: calc(100% - 64px);
-  width: calc(100% - 64px);
+  height: calc(100% - 56px);
+  width: calc(100% - 56px);
   border-radius: 1px;
 }
 

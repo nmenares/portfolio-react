@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Popup } from "semantic-ui-react";
@@ -12,12 +12,8 @@ class NavBar extends React.Component {
         <div className="row header">
           <div className="eight wide column tittleWrapper">
             <div className="ui grid">
-              <div className="row navbarTitle">
-                Nataly Menares
-              </div>
-              <div className="row navbarSubtitle">
-                Software Engineer
-              </div>
+              <div className="row navbarTitle">Nataly Menares</div>
+              <div className="row navbarSubtitle">UX/UI Software Engineer</div>
             </div>
           </div>
           <div className="eight wide column right aligned linkIcons">
@@ -49,16 +45,22 @@ class NavBar extends React.Component {
         <div className="row main text-dark-purple">
           <div className="eight wide column menu">
             <div className="ui grid">
-              <div className="row option"><Link to="/career">Background</Link></div>
-              <div className="row option"><Link to="/career">Projects</Link></div>
-              <div className="row option"><Link to="/career">Gallery</Link></div>
-              <div className="row option"><Link to="/career">Contact</Link></div>
+              <div className="row option">
+                <Link to="/background">Background</Link>
+              </div>
+              <div className="row option">
+                <Link to="/career">Projects</Link>
+              </div>
+              <div className="row option">
+                <Link to="/career">Gallery</Link>
+              </div>
+              <div className="row option">
+                <Link to="/career">Contact</Link>
+              </div>
             </div>
           </div>
           <div className="three wide column"></div>
-          <div className="four wide column introText">
-            { texts.intro }
-          </div>
+          <div className="four wide column introText">{texts.intro}</div>
           <div className="one wide column"></div>
         </div>
       </div>

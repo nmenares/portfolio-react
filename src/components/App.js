@@ -1,12 +1,9 @@
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Canvas from "./Canvas";
 import NavBar from "./NavBar";
 import Career from "./Career";
+import Background from "./Background";
 import More from "./More";
 import FooterInfo from "./FooterInfo";
 import "../styles/basics.css";
@@ -17,24 +14,31 @@ import "semantic-ui-css/semantic.min.css";
 
 library.add(fab, fas);
 
-class App extends React.Component {
-  render() {
-    return (
-      <Router>
-        <div className="globalBox background-light-grey">
-          <div className="innerGlobalBox border-dark-purple">
-            <Canvas />
-            <Routes>
-              <Route exact path="/" element={<NavBar />} />
-              <Route exact path="/career" element={<Career />} />
-              <Route exact path="/more" element={<More />} />
-            </Routes>
-          </div>
-          <FooterInfo />
+const App = () => {
+  const [useThemeColor, setThemeColor] = useState(true);
+  const handleThemeColor = (val) => {
+    setThemeColor(val);
+  };
+
+  return (
+    <Router>
+      <div className="globalBox background-light-grey">
+        <div className="innerGlobalBox border-dark-purple">
+          <Canvas useThemeColor={useThemeColor} />
+          <Routes>
+            <Route exact path="/" element={<NavBar />} />
+            <Route exact path="/background" element={<Background />} />
+            <Route exact path="/career" element={<Career />} />
+            <Route exact path="/more" element={<More />} />
+          </Routes>
         </div>
-      </Router>
-    );
-  }
-}
+        <FooterInfo
+          useThemeColor={useThemeColor}
+          handleTheme={handleThemeColor}
+        />
+      </div>
+    </Router>
+  );
+};
 
 export default App;
