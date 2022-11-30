@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Canvas from "./Canvas";
 import NavBar from "./NavBar";
+import Intro from "./Intro";
 import Career from "./Career";
 import Background from "./Background";
 import More from "./More";
@@ -24,13 +24,17 @@ const App = () => {
     <Router>
       <div className="globalBox background-light-grey">
         <div className="innerGlobalBox border-dark-purple">
-          <Canvas useThemeColor={useThemeColor} />
-          <Routes>
-            <Route exact path="/" element={<NavBar />} />
-            <Route exact path="/background" element={<Background />} />
-            <Route exact path="/career" element={<Career />} />
-            <Route exact path="/more" element={<More />} />
-          </Routes>
+          <div className="nav-bar">
+            <NavBar useThemeColor={useThemeColor} />
+          </div>
+          <div className="main-content">
+            <Routes>
+              <Route exact path="/" element={<Intro />} />
+              <Route exact path="/background" element={<Background />} />
+              <Route exact path="/career" element={<Career />} />
+              <Route exact path="/more" element={<More />} />
+            </Routes>
+          </div>
         </div>
         <FooterInfo
           useThemeColor={useThemeColor}

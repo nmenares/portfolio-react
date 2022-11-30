@@ -56,7 +56,7 @@
   text-decoration: underline;
 }
 
-.ui.grid>.row>.column.introText {
+.ui.grid>.column.intro-text {
   white-space: pre-line;
   font-size: 16px;
   height: 100%;

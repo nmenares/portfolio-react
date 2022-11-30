@@ -64,7 +64,7 @@ const Canvas = ({ useThemeColor }) => {
     return () => {
       window.cancelAnimationFrame(animationFrameId);
     };
-  }, [useThemeColor]);
+  }, [palette, useThemeColor]);
 
   return <canvas className="canvasBackground" ref={canvasRef} />;
 };
