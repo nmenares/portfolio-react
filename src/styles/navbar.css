@@ -56,11 +56,14 @@
   text-decoration: underline;
 }
 
+.ui.grid.intro-wrapper {
+  height: 100%;
+}
+
 .ui.grid>.column.intro-text {
   white-space: pre-line;
   font-size: 16px;
-  height: 100%;
-  display: flex;
+  display: flex !important;
   justify-content: flex-end;
   align-items: flex-end;
   padding-bottom: 20px;
